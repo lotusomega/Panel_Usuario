@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="utf-8">
@@ -7,37 +7,21 @@
 
 	<title>Inverspot | Panel de Usuario</title>
 
-	<!-- Global stylesheets -->
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style/panel.css" >
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/panel.css" rel="stylesheet" type="text/css">
-	<!-- /global stylesheets -->
-
-	<!-- Core JS files -->
-	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
-	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
-	<!-- /core JS files -->
-
-	<!-- Theme JS files -->
-	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/ui/fullcalendar/fullcalendar.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/visualization/echarts/echarts.js"></script>
-
-	<script type="text/javascript" src="assets/js/core/app.js"></script>
-	<script type="text/javascript" src="assets/js/pages/user_pages_profile.js"></script>
-	<!-- /theme JS files -->
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <link rel="shortcut icon" type="image/png" href="style/images/favicon.png"/>
+    <script type="text/javascript" src="script/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/npm.js"></script>
+    
 </head>
 <body>
-
 <div class="mainbody container-fluid">
     <div class="row">
         <div class="navbar-wrapper">
@@ -49,8 +33,8 @@
                                 <span class="sr-only"></span> <span class="icon-bar"></span><span
                                     class="icon-bar"></span><span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#" style="margin-right:-8px; margin-top:-5px;">
-                                <img alt="Brand" src="assets/images/inver.png" width="140px" style="height: 28px;">
+                            <a class="navbar-brand" href="panel_usuario.html" style="margin-right:-8px; margin-top:-5px;">
+                                <img alt="Brand" src="style/images/inver.png" width="140px"  style="height: 28px;">
                             </a>                    
                             
                         </div>
@@ -61,44 +45,15 @@
                                 <li><a href="inversiones_usuario.html">Mis Inversiones</a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="user-name">
-                                        John Doe
-                                    </span>
-                                    <b class="caret"></b></a>
+                                  <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bienvenido
+                                    <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li>
-                                            <div class="navbar-content">
-                                                <div class="row">
-                                                    <div class="col-md-5">
-                                                        <img src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" alt="Alternate Text" class="img-responsive" style="margin-bottom: 20px;" width="120px" height="120px" />
-                                                    </div>
-                                                    <div class="col-md-7" style="margin-bottom: 20px;">
-                                                        <span>John Doe</span>
-                                                        <p class="text-muted small">
-                                                            example@pods.tld</p>
-                                                        <div class="divider">
-                                                        </div>
-                                                        <a href="#" class="btn btn-default btn-xs"><i class="fa fa-question-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Ayuda</a><br>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="navbar-footer">
-                                                <div class="navbar-footer-content">
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <a href="#" class="btn btn-default btn-sm"><i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;&nbsp;Cambio de Contraseña</a>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <a href="#" class="btn btn-default btn-sm pull-right"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;&nbsp;Salir</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
+                                      <li><a href="panel_usuario.html">Mi Perfil</a></li>
+                                      <li></li>
+                                      <li><a href="#">Cerrar Sesión</a></li>
                                     </ul>
-                                </li>
+                                  </li>
                             </ul>
                         </div>
                     </div>
@@ -111,8 +66,10 @@
                 <div class="panel-body">
                     <div class="media">
                         <div align="center">
-                            <img class="thumbnail img-responsive" src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" width="300px" height="300px">
+<!--                            <img class="thumbnail img-responsive" src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" width="300px" height="300px">-->
                         </div>
+                        
+          
                         <div class="media-body">
                             <hr>
                             <h3><strong>Ubicación</strong></h3>
@@ -130,18 +87,12 @@
                 <div class="panel-body">
                     <span>
                         <h1 class="panel-title pull-left" style="font-size:30px;">John Doe <br><small>example@pods.tld</small> <i class="fa fa-check text-success" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Su cuenta de correo electrónico esta verificada"></i></h1>
-                        <div class="dropdown pull-right">
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Mis Inversiones
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <br>
-                                <li><a href="/panel/inversiones_usuario.html">Ver Todas</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#"><i class="fa fa-fw fa-plus" aria-hidden="true"></i> Agregar una Nueva Inversión</a></li>
-                                <br>
-                            </ul>
+                        <div style="float: right; margin: 30px;">
+                            <div class="btn-group">
+                                <a class="btn btn-info" href="#">
+                                    Editar Perfil 
+                                </a>
+                            </div>
                         </div>
                     </span>
                     <br><br>
@@ -152,15 +103,7 @@
                 </div>
             </div>
             
-            <div class="panel panel-default">
-                <div style="float: right; margin: 30px;">
-                    <div class="btn-group">
-                        <a class="btn btn-info" href="#">
-                            Editar Perfil 
-                        </a>
-                    </div>
-                </div>
-                
+            <div class="panel panel-default">            
                 <div class="panel-body">
                     <h3 style="margin-left: 10px;"><strong>Mis Datos</strong></h3>
                     <br>
@@ -178,13 +121,13 @@
                         <div class="form-group">
                           <label for="inputEmail" class="col-lg-3 control-label">Correo electrónico:</label>
                           <div class="col-lg-8">
-                            <input type="email" class="form-control input-sm" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+                            <input type="email" class="form-control input-sm" id="inputEmail" placeholder="" data-error="Correo invalido" required>
                             <div class="help-block with-errors"></div>
                           </div>
                         </div>
 
                         <div class="form-group">
-                          <label class="col-lg-3" for="sel1">Estado:</label>
+                          <label for="estado1" class="col-lg-3 control-label">Estado:</label>
                           <div class="col-lg-8">
                               <select class="form-control" id="sel1">
                                          <option value="na" selected="">Elige</option>
@@ -242,7 +185,7 @@
                           <div class="col-md-8">
                             <input class="btn btn-primary" type="submit" value="Guardar Cambios" type="button">
                             <span></span>
-                            <input class="btn btn-default" value="Cancelar" type="reset" style="margin-left:10px;">
+                            <input class="btn btn-danger" value="Cancelar" type="reset" style="margin-left:10px;">
                           </div>
                         </div>
                       </form>
@@ -297,54 +240,7 @@
 </div>
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-	<script>
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-        })
-
-        $(function () {
-          $('[data-toggle="popover"]').popover()
-        })
-	</script>
-<script>
-var btnCust = '<button type="button" class="btn btn-default" title="Add picture tags" ' + 
-    'onclick="alert(\'Call your custom code here.\')">' +
-    '<i class="glyphicon glyphicon-tag"></i>' +
-    '</button>'; 
-$("#avatar-1").fileinput({
-    overwriteInitial: true,
-    maxFileSize: 1500,
-    showClose: false,
-    showCaption: false,
-    browseLabel: '',
-    removeLabel: '',
-    browseIcon: '<i class="glyphicon glyphicon-folder-open"></i>',
-    removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
-    removeTitle: 'Cancel or reset changes',
-    elErrorContainer: '#kv-avatar-errors-1',
-    msgErrorClass: 'alert alert-block alert-danger',
-    defaultPreviewContent: '<img src="/uploads/default_avatar_male.jpg" alt="Your Avatar" style="width:160px">',
-    layoutTemplates: {main2: '{preview} ' +  btnCust + ' {remove} {browse}'},
-    allowedFileExtensions: ["jpg", "png", "gif"]
-});
-</script>
+	<script src="script/bootstrap.min.js"></script>
    
     <script>
         $("input[type=password]").keyup(function(){
@@ -425,9 +321,15 @@ $("#avatar-1").fileinput({
     </script>
 
 
+    <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
 
-
+        $(function () {
+          $('[data-toggle="popover"]').popover()
+        })
+    </script>
 
 </body>
-
 </html>
